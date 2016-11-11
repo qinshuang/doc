@@ -73,6 +73,7 @@ zset的成员是唯一的,但分数(score)却可以重复。
 * key 操作
 
 
+```
     DEL key # 该命令用于在 key 存在时删除 key。
     EXISTS key #检查给定 key 是否存在。
     EXPIRE key seconds #为给定 key 设置过期时间。
@@ -85,10 +86,13 @@ zset的成员是唯一的,但分数(score)却可以重复。
     RENAME key newkey  # 修改 key 的名称
     RENAMENX key newkey #仅当 newkey 不存在时，将 key 改名为 newkey 。
     TYPE key #返回 key 所储存的值的类型。
-    
+```
+
+
 * String 类型操作
 
 
+```
     SET key value #设置指定 key 的值
     GET key # 获取指定key 的值
     GETRANGE key start end #返回 key 中字符串值的子字符
@@ -104,5 +108,6 @@ zset的成员是唯一的,但分数(score)却可以重复。
     DECR key #将 key 中储存的数字值减一。
     DECRBY key decrement #key 所储存的值减去给定的减量值（decrement） 
     APPEND key value # 如果 key 已经存在并且是一个字符串， APPEND 命令将 value 追加到 key 原来的值的末尾。
-    
+```
+
     
